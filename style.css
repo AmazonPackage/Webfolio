@@ -1,0 +1,399 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	/* background: url('blackhole.png') no-repeat; */
+	background: #161616;
+	background-size: cover;
+	background-attachment: scroll;
+	color: white;
+	
+}
+
+header {
+  background-color: transparent;
+  backdrop-filter: blur(1.5px);
+  position: sticky;
+  top: 0;
+  padding-bottom: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
+	background-color: #121212;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+  margin: 0;
+}
+
+.front{
+    background: linear-gradient(rgba(22, 22, 22, 0), rgba(22, 22, 22, 1) 710px), url("forest.jpg") no-repeat top center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 50px;
+	padding-top: 1px;
+	margin-top: -75px;
+}
+
+.front h2{
+	float: left;
+	margin-left: 50px;
+	margin-top: 610px;
+	font-family: "Josefin Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-size: 80px;
+}
+
+.front a{
+	position: absolute;
+	display: inline-block;
+	float: center;
+	color: black;
+	margin-top: 10px;
+	text-decoration: none;
+	width: 10px;
+	height: 0;
+}
+
+.topnav {
+	width: 95%;
+	margin: 0 auto;
+	align-items: left;
+	justify-content: space-around;
+	padding: 0px 0;
+	height: 50px;
+	padding-top: 0;
+}
+
+.topnav ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.topnav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 26px;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.topnav h2{
+  float: left;
+  margin: 4px 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+}
+
+.topnav a {
+  color: #E5E5E5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  color: #F2FFF4;
+}
+
+.topnav a::before {
+  content: '';
+  display: block;
+  height: 1.5px;
+  background-color: #F2FFF4;
+  position: absolute;
+  top: 110%;
+  width: 0%;
+  transition: all ease-in-out 220ms;
+}
+
+.topnav a:hover::before {
+  width: 100%;
+}
+
+.bodytext {
+	margin: 20px;
+	padding-top: 20px;
+}
+
+.container {
+	padding: 55px;
+	margin-top: -90px;
+	padding-top: 70px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.about-me{
+	font-size: 200px;
+}
+
+.container h3 {
+	font-size: 45px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+
+.container h4 {
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+.container p {
+	margin-top: 7px;
+	font-size: 25px;
+	margin-bottom: 0;
+}
+
+.container ul {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.container li {
+	margin-bottom: 0;
+}
+
+.education {
+	display: inline-block;
+	margin-left: 0px;
+}
+
+/* .card{
+	display: inline-block;
+	margin-top: 25px;
+	height: 200px;
+	width: 445px;
+	background-color: #544F53;
+	border-radius: 35px;
+	margin-right: 15px;
+}
+.card img {
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	margin-top: 22px;
+	margin-left: 10px;
+}
+
+.card h5 {
+	display: inline-block;
+	margin-top: -145px;
+	margin-left: 170px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+/*use grids
+
+.card p {
+	position: relative;
+	margin-top: 0px;
+	margin-left: 170px;
+} */
+
+/* .cardList {
+	display: flex;
+	flex-direction: row; 
+}
+
+.card {
+	display: flex;
+	border-radius: 25px;
+	background-color: #544F43;
+	height: 200px;
+	width: 445px;
+	margin-right: 12px;
+}
+
+.card .cardText h5 {
+	font-size: 25px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+
+.card .cardImg {
+	width: 35%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card .cardImg img {
+	display: block;
+	width: 100%;
+}
+
+.card .cardText {
+	width: 65%;
+	margin-top: -25px;
+}
+
+.card .cardText .cardFoot {
+	display: block;
+	float: right;
+	margin-right: 18px;
+	margin-top: 100px;
+} */
+
+.cardList {
+	display: flex;
+	flex-direction: row; 
+}
+
+.card {
+	display: flex;
+	border-radius: 75px;
+	background-color: #22AAA1;
+	height: 375px;
+	width: 350px;
+	margin: 30px 30px;
+	margin-left: 0;
+	flex-direction: column;
+}
+
+.card .cardImg {
+	width: auto;
+	height: 270px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card .cardImg img {
+	width: auto;
+	height: 90%;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+}
+
+.card .cardText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: black;
+}
+.card .cardText h5 {
+	margin-top: 15px;
+	font-size: 21px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	display: block;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card .cardText p {
+	margin-top: 5px;
+	font-size: 19px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	display: block;
+	text-align: center;
+}
+
+.pillList {
+	display: flex;
+	flex-direction: row; 
+}
+
+.pill {
+	display: flex;
+	border-radius: 45px;
+	background-color: #22AAA1;
+	height: 236px;
+	width: 180px;
+	margin-right: 15px;
+	margin:20px;
+	margin-left: 0;
+	flex-direction: column;
+	box-shadow: 0 1px 3px white;
+}
+
+.pill .pillImg {
+	width: auto;
+	height: 136px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pill .pillImg img {
+	width: auto;
+	height: 84%;
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+}
+
+.pill .pillText h5 {
+	margin-top: 35px;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	margin-bottom: 0;
+	display: block;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+}
+
+.pCardList {
+	display: flex;
+	flex-direction: row;
+}
+
+.pCard {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: #136F63;
+	height: 200px;
+	width: 385px;
+	margin-right: 25px;
+}
+
+.pCardText {
+	margin-top: -25px;
+	margin-left: 15px;
+}
+.pCard h5{
+	font-size: 24px;
+	margin-bottom: 0px;
+}
+
+.pCard p {
+	font-size: 18px;
+}
+
+.abc {
+	height: 420px;
+}
